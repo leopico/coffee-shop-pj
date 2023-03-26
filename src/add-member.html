@@ -12,13 +12,13 @@
 
     <header class="navbar bg-base-100 container mx-auto">
         <div class="flex-1">
-            <a class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
+            <a href="/index.html" class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
         </div>
         <nav class="flex-none">
             <ul class="menu menu-horizontal px-1">
-                <li><a href="./index.html">All Coffee</a></li>
-                <li><a href="./member.html">Members</a></li>
-                <li><a>About us</a></li>
+                <li><a href="/src/all_coffee.html">All Coffee</a></li>
+                <li><a href="/src/member.html">Members</a></li>
+                <li><a id="coming-soon">About us</a></li>
             </ul>
         </nav>
     </header>
@@ -30,28 +30,29 @@
                 <h2 class="text-center text-2xl font-bold">Add a new member</h2>
                 <div class="flex justify-center flex-wrap gap-4 mt-4">
                     <!-- member cards -->
-                    <form class="">
+                    <form>
                         <div class="form-control w-full max-w-xs">
                             <label class="label">
                                 <span class="label-text">Name</span>
                             </label>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                            <input required id="name" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
                         </div>
                         <div class="form-control w-full max-w-xs">
                             <label class="label">
-                                <span class="label-text">User Name</span>
+                                <span class="label-text">Job title</span>
                             </label>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                            <input required id="job" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
                         </div>
                         <div class="form-control w-full max-w-xs mt-4">
                             <input type="file" class="file-input file-input-bordered file-input-accent w-full max-w-xs" />
                         </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <a href="/index.html" class="btn btn-outline btn-success">Goback Home</a>
+                            <button id="submit-btn" class="btn btn-outline btn-success">Save</button>
+                        </div>
                     </form>
                 </div>
-                <div class="flex justify-evenly items-center mt-4">
-                    <a href="./index.html" class="btn btn-outline btn-success">Goback Home</a>
-                    <a href="./index.html" class="btn btn-outline btn-success">Save</a>
-                </div>
+                
             </div>
         </section>
     </main>
@@ -89,6 +90,8 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="./add-member.js"></script>
+    <script type="module" src="about.js"></script>
 </body>
 
 </html>

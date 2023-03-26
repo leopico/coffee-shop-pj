@@ -9,15 +9,16 @@
 </head>
 
 <body class="min-h-screen flex flex-col">
+
     <header class="navbar bg-base-100 container mx-auto">
         <div class="flex-1">
-            <a class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
+            <a href="/index.html" class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
         </div>
         <nav class="flex-none">
             <ul class="menu menu-horizontal px-1">
-                <li><a href="./index.html">All Coffee</a></li>
-                <li><a href="./member.html">Members</a></li>
-                <li><a>About us</a></li>
+                <li><a href="/src/all_coffee.html">All Coffee</a></li>
+                <li><a href="/src/member.html">Members</a></li>
+                <li><a id="coming-soon">About us</a></li>
             </ul>
         </nav>
     </header>
@@ -25,26 +26,15 @@
     <!-- member section -->
     <main class="grow">
         <section>
-            <h2 class="text-center text-2xl font-bold">our member</h2>
+            <h2 class="text-center text-2xl font-bold">our members</h2>
             <!-- members card container -->
-            <div class="flex justify-center flex-wrap gap-4 mt-4">
+            <div id="add-member" class="flex justify-center flex-wrap gap-4 mt-4">
                 <!-- member cards -->
-                <article class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                        <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </article>
+                <!-- create element form js -->
             </div>
-            <div class="flex flex-col justify-center items-center mt-4">
+            <div class="flex flex-col justify-center items-center mt-8">
                 <h1 class="text-center font-bold text-lg text-gray-700">This feature can do action only admin in real pj!</h1>
-                <a href="./add-member.html" class="btn btn-outline btn-info">add member</a>
+                <a href="./add-member.html" class="btn btn-outline btn-info mt-8">add member</a>
             </div>
         </section>
     </main>
@@ -82,6 +72,8 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="about.js"></script>
+    <script type="module" src="./member.js"></script>
 </body>
 
 </html>

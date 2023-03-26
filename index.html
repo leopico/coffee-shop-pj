@@ -7,22 +7,23 @@
     <title>Casa Cafe Site | Home Page</title>
   </head>
   <body>
+
     <header class="navbar bg-base-100 container mx-auto">
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
+        <a href="/index.html" class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
       </div>
       <nav class="flex-none">
         <ul class="menu menu-horizontal px-1">
-          <li><a href="./index.html">All Coffee</a></li>
-          <li><a href="./member.html">Members</a></li>
-          <li><a>About us</a></li>
+          <li><a href="/src/all_coffee.html">All Coffee</a></li>
+          <li><a href="/src/member.html">Members</a></li>
+          <li><a id="coming-soon">About us</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- carousel section -->
     <section class="mt-8">
-      <div class="carousel w-full container mx-auto max-w-6xl max-h-72">
+      <div class="carousel w-full container mx-auto max-w-6xl max-h-72 object-cover">
         <div id="slide1" class="carousel-item relative w-full">
           <img  src="https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full object-cover" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -59,55 +60,8 @@
       <div class="container mx-auto">
         <h2 class="text-center text-2xl font-bold">Feature Coffee</h2>
         <!-- cards container -->
-        <div class="flex justify-center flex-wrap gap-4 mt-4">
-          <!-- card component -->
-          <article class="card w-96 bg-base-100 shadow-xl rounded-sm">
-            <figure class=""><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG" alt="coffee" /></figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Galão
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>"Originating in Portugal, this hot coffee drink is closely related to the latte and cappuccino. Only difference is it
-              contains about twice as much foamed milk, making it a lighter drink compared to the other two."</p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">Espresso</div>
-                <div class="badge badge-outline">Foamed milk</div>
-              </div>
-            </div>
-          </article>
-          <article class="card w-96 bg-base-100 shadow-xl rounded-sm">
-            <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG" alt="coffee" /></figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Galão
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>"Originating in Portugal, this hot coffee drink is closely related to the latte and cappuccino. Only difference
-                is it
-                contains about twice as much foamed milk, making it a lighter drink compared to the other two."</p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">Espresso</div>
-                <div class="badge badge-outline">Foamed milk</div>
-              </div>
-            </div>
-          </article>
-          <article class="card w-96 bg-base-100 shadow-xl rounded-sm">
-            <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG" alt="coffee" /></figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Galão
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>"Originating in Portugal, this hot coffee drink is closely related to the latte and cappuccino. Only difference
-                is it
-                contains about twice as much foamed milk, making it a lighter drink compared to the other two."</p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">Espresso</div>
-                <div class="badge badge-outline">Foamed milk</div>
-              </div>
-            </div>
-          </article>
+        <div id="feature-container" class="flex justify-center flex-wrap gap-4 mt-4">
+          <!-- create elements from js -->
         </div>
       </div>
     </section>
@@ -117,32 +71,13 @@
       <div class="container mx-auto">
         <h2 class="text-center text-2xl font-bold">Grab your favorite one</h2>
         <!-- cards container -->
-        <div class="flex justify-center flex-wrap gap-4 mt-4">
+        <div id="pick-container" class="flex justify-center flex-wrap gap-4 mt-4">
           <!-- card component -->
-          <article class="card w-96 bg-base-100 shadow-xl image-full">
-            <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG" alt="Shoes" /></figure>
-            <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </article>
-          <article class="card w-96 bg-base-100 shadow-xl image-full">
-            <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG" alt="Shoes" /></figure>
-            <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </article>
+          <!-- coming element from js -->
         </div>
       </div> 
       <div class="flex justify-center mt-4">
-        <a href="./all_coffee.html" class="btn btn-outline">View all items</a>
+        <a href="/src/all_coffee.html" class="btn btn-outline">View all items</a>
       </div>
     </section>
 
@@ -178,5 +113,7 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/about.js"></script>
+    <script type="module" src="/src/home.js"></script>
   </body>
 </html>

@@ -16,3 +16,16 @@ h1,h2,h3 {
     font-family: 'Outfit', sans-serif;
 }
 
+@layer components {
+    .feature-cards {
+        @apply card w-96 bg-base-100 shadow-xl rounded-sm;
+    }
+    .pick-cards {
+        @apply card w-96 bg-base-100 shadow-xl image-full;
+    }
+    .members {
+        @apply card w-96 bg-base-100 shadow-xl;
+    }
+
+}
+

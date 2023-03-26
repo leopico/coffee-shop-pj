@@ -8,162 +8,40 @@
     <title>Casa Cafe Site | Home Page</title>
 </head>
 
-<body>
+<body class=" flex flex-col min-h-screen">
     <header class="navbar bg-base-100 container mx-auto">
         <div class="flex-1">
-            <a class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
+            <a href="/index.html" class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
         </div>
         <nav class="flex-none">
             <ul class="menu menu-horizontal px-1">
-                <li><a href="./index.html">All Coffee</a></li>
-                <li><a href="./member.html">Members</a></li>
-                <li><a>About us</a></li>
+                <li><a href="/src/all_coffee.html">All Coffee</a></li>
+                <li><a href="/src/member.html">Members</a></li>
+                <li><a id="coming-soon">About us</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Feature section -->
-    <section class="mt-4">
-        <div class="container mx-auto">
-            <h2 class="text-center text-2xl font-bold">Feature Coffee</h2>
-            <!-- cards container -->
-            <div class="flex justify-center flex-wrap gap-4 mt-4">
-                <!-- card component -->
-                <article class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG"
-                            alt="coffee" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Galão
-                            <div class="badge badge-secondary">NEW</div>
-                        </h2>
-                        <p>"Originating in Portugal, this hot coffee drink is closely related to the latte and
-                            cappuccino. Only difference is it
-                            contains about twice as much foamed milk, making it a lighter drink compared to the other
-                            two."</p>
-                        <div class="card-actions justify-end">
-                            <div class="badge badge-outline">Espresso</div>
-                            <div class="badge badge-outline">Foamed milk</div>
-                        </div>
-                    </div>
-                </article>
-                <article class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG"
-                            alt="coffee" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Galão
-                            <div class="badge badge-secondary">NEW</div>
-                        </h2>
-                        <p>"Originating in Portugal, this hot coffee drink is closely related to the latte and
-                            cappuccino. Only difference
-                            is it
-                            contains about twice as much foamed milk, making it a lighter drink compared to the other
-                            two."</p>
-                        <div class="card-actions justify-end">
-                            <div class="badge badge-outline">Espresso</div>
-                            <div class="badge badge-outline">Foamed milk</div>
-                        </div>
-                    </div>
-                </article>
-                <article class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG"
-                            alt="coffee" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Galão
-                            <div class="badge badge-secondary">NEW</div>
-                        </h2>
-                        <p>"Originating in Portugal, this hot coffee drink is closely related to the latte and
-                            cappuccino. Only difference
-                            is it
-                            contains about twice as much foamed milk, making it a lighter drink compared to the other
-                            two."</p>
-                        <div class="card-actions justify-end">
-                            <div class="badge badge-outline">Espresso</div>
-                            <div class="badge badge-outline">Foamed milk</div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+    <main class="grow">
+        <section class="mt-4">
+            <div class="container mx-auto">
+                <h2 class="text-center text-2xl font-bold">All coffee we provide</h2>
 
-    <!-- pick section -->
-    <section class="mt-4">
-        <div class="container mx-auto">
-            <h2 class="text-center text-2xl font-bold">Grab your favorite one</h2>
-            <!-- cards container -->
-            <div class="flex justify-center flex-wrap gap-4 mt-4">
-                <!-- card component -->
-                <article class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG"
-                            alt="coffee" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Galão
-                            <div class="badge badge-secondary">NEW</div>
-                        </h2>
-                        <p>"Originating in Portugal, this hot coffee drink is closely related to the latte and
-                            cappuccino. Only
-                            difference is it
-                            contains about twice as much foamed milk, making it a lighter drink compared to the other
-                            two."</p>
-                        <div class="card-actions justify-end">
-                            <div class="badge badge-outline">Espresso</div>
-                            <div class="badge badge-outline">Foamed milk</div>
-                        </div>
-                    </div>
-                </article>
-                <article class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG"
-                            alt="coffee" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Galão
-                            <div class="badge badge-secondary">NEW</div>
-                        </h2>
-                        <p>"Originating in Portugal, this hot coffee drink is closely related to the latte and
-                            cappuccino. Only
-                            difference
-                            is it
-                            contains about twice as much foamed milk, making it a lighter drink compared to the other
-                            two."</p>
-                        <div class="card-actions justify-end">
-                            <div class="badge badge-outline">Espresso</div>
-                            <div class="badge badge-outline">Foamed milk</div>
-                        </div>
-                    </div>
-                </article>
-                <article class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG"
-                            alt="coffee" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Galão
-                            <div class="badge badge-secondary">NEW</div>
-                        </h2>
-                        <p>"Originating in Portugal, this hot coffee drink is closely related to the latte and
-                            cappuccino. Only
-                            difference
-                            is it
-                            contains about twice as much foamed milk, making it a lighter drink compared to the other
-                            two."</p>
-                        <div class="card-actions justify-end">
-                            <div class="badge badge-outline">Espresso</div>
-                            <div class="badge badge-outline">Foamed milk</div>
-                        </div>
-                    </div>
-                </article>
+                <div id="badge-container" class="flex max-w-4xl flex-wrap justify-center py-6 mx-auto gap-4">
+                   <!-- create element from js -->
+                </div>
+
+                <!-- cards container -->
+                <div id="feature-container" class="flex justify-center flex-wrap gap-4 mt-4">
+                    <!-- create elements from js -->
+                </div>
             </div>
-        </div>
-        <div class="flex justify-center mt-4">
-            <a href="./index.html" class="btn btn-outline">Back home</a>
-        </div>
-    </section>
+            <div class="flex justify-center mt-4">
+                <a href="/index.html" class="btn btn-outline">Goback Home</a>
+            </div>
+        </section>
+    </main>
 
     <!-- footer -->
     <footer class="footer items-center p-4 text-gray-700 mt-8 container mx-auto">
@@ -197,6 +75,8 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="about.js"></script>
+    <script type="module" src="./all-coffee.js"></script>
 </body>
 
 </html>
