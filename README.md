@@ -4,7 +4,7 @@ This pj was build with vite environmental that including with HTML, js, Tailwind
 
 ## Demo
 
-[deployed on vercel]()
+[deployed on vercel](https://coffee-shop-pj.vercel.app/)
 
 ## API Reference
 
